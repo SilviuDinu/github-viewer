@@ -29,9 +29,39 @@
 
         };
 
+        var getRepoDetails = function (username, repo) {
+
+            return $http.get("https://api.github.com/repos/" + username + "/" + repo)
+                .then(function (response) {
+                    return response.data;
+                });
+
+        };
+
+        var getIssues = function (username, repo) {
+
+            return $http.get("https://api.github.com/repos/" + username + "/" + repo + "/issues")
+                .then(function (response) {
+                    return response.data;
+                });
+
+        };
+
+        var getContributors = function (username, repo) {
+
+            return $http.get("https://api.github.com/repos/" + username + "/" + repo + "/contributors")
+                .then(function (response) {
+                    return response.data;
+                });
+
+        };
+
         return {
             getUser: getUser,
             getRepos: getRepos,
+            getRepoDetails: getRepoDetails,
+            getIssues: getIssues,
+            getContributors: getContributors,
             getRequestsLeft: getRequestsLeft
         };
     };

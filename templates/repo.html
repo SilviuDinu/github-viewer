@@ -1,0 +1,19 @@
+<div class="details">
+    <div ng-if="searching  && !error" class="loader"></div>
+    {{error}}
+    <div ng-include="'./templates/requestsLeft.html'"></div>
+        <div ng-if="searching && !error" class="loader"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>{{repo}}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Salut</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

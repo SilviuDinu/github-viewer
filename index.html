@@ -2,6 +2,7 @@
 <html ng-app="githubViewer">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
   <link rel="stylesheet" href="./css/style.css" />
@@ -13,8 +14,20 @@
 </head>
 
 <body>
-  <h1>GitHub Viewer</h1>
-  <div ng-view></div>
+  <div class="container">
+
+    <div class="box-1">
+      <ul>
+        <li><a class="active" href="#main">Home</a></li>
+      </ul>
+    </div>
+
+    <div class="title box-2">
+        <h1> Github viewer </h1>
+      <div ng-view></div>
+    </div>
+
+  </div>
 </body>
 
 </html>

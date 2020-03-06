@@ -5,14 +5,13 @@
     <div>
         <p>Viewing details about<br>"{{repo}}"</p>
     </div>
-    <table class="repoDetails">
+    <table ng-if="repoDetails" class="repoDetails">
         <thead>
             <tr>
                 <th colspan="3">{{repo}}</th>
             </tr>
         </thead>
         <tbody>
-            <div ng-hide="repoDetails || error" class="loader"></div>
             <tr>
                 <td>Owner: {{repoDetails.owner.login}}</td>
                 <td><a href="{{repoDetails.owner.html_url}}" target="_blank">Owner profile URL</a></td>

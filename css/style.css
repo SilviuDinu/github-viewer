@@ -100,7 +100,8 @@ li a:hover:not(.active) {
         overflow: auto;
     }
 
-    input.search, select{
+    input.search,
+    select {
         width: auto;
     }
 
@@ -108,7 +109,11 @@ li a:hover:not(.active) {
         width: 100%;
     }
 
-    div#div{
+    .box-2{
+        padding-top: 48px;
+    }
+
+    div#div {
         position: relative;
         margin-top: 50px;
     }
@@ -126,6 +131,10 @@ li a:hover:not(.active) {
     .active {
         background-color: #4CAF50;
     }
+}
+
+.avatar.owner {
+    padding: 0;
 }
 
 .center {

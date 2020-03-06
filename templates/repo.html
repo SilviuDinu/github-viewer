@@ -19,12 +19,12 @@
                 <td>
                     <div>
                         <a href="{{repoDetails.owner.html_url}}" target="_blank">
-                            <img class="avatar" height="60" width="60" ng-src="{{repoDetails.owner.avatar_url}}">
+                            <img class="avatar owner" height="60" width="60" ng-src="{{repoDetails.owner.avatar_url}}">
                         </a>
                     </div>
                 </td>
             </tr>
-            <tr>
+            <tr ng-if="issues && issues.length > 0">
                 <td class="center" colspan="3">
                     <p>Issues</p>
                     <div ng-hide="issues || error" class="loader"></div>
@@ -34,7 +34,7 @@
                 <td>{{issue.title}}</td>
                 <td class="center" colspan="2"><a href="{{issue.html_url}}" target="_blank">Issue URL</a></td>
             </tr>
-            <tr>
+            <tr ng-if="contributors">
                 <td class="center" colspan="3">
                     <p>Contributors</p>
                     <div ng-hide="contributors || error" class="loader"></div>

@@ -36,7 +36,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="repo in repos | filter:searchWord:name | orderBy:sortOrder">
-                        <td><div>{{repo.name}}</div><button class="btn-custom" ng-click="search(username,repo.name)">View repo details</button></td>
+                        <td><div class="col-sm-8">{{repo.name}}<button class="btn-custom" ng-click="search(username,repo.name)">View details</button></div></td>
                         <td>{{repo.language}}</td>
                         <td>{{repo.stargazers_count}}</td>
                         <td><a href="{{repo.html_url}}" target="_blank">Repository URL</a></td>

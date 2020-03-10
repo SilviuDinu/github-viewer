@@ -64,6 +64,8 @@ center {
 body {
     margin: 0;
     height: 100%;
+    padding: 0;
+    line-height: initial !important;
 }
 
 @media (max-width: 768px) {
@@ -125,18 +127,22 @@ table.custom thead {
     text-align: left;
     background-color: #4CAF50;
     color: white;
-}
+} 
 
 .title {
     text-align: center;
 }
 
-table.custom td,
-table.custom th {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 15px;
+table.custom td
+ {
+    padding-top: 5px;
     padding-bottom: 5px;
+    text-align: left;
+}
+table.custom th{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
 }
 
 td.center {
@@ -144,13 +150,13 @@ td.center {
     border-left: 1px solid;
 }
 
-table.custom  tr:hover {
+ table.custom  tr:hover {
     background-color: #ddd;
 }
 
 table.custom  tr:nth-child(2n) {
     background-color: #f2f2f2;
-}
+} 
 
 .details {
     width: 95%;
@@ -185,7 +191,7 @@ img {
 }
 
 .container{
-    padding: 100px 25px 25px 0px;
+    padding: 25px 25px 25px 0px;
 }
 
 .btn-custom{
@@ -193,4 +199,5 @@ img {
     width: auto;
     background-color: #2B65EC;
     color: #fff;
+    display: block;
 }

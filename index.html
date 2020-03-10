@@ -11,23 +11,51 @@
   <script src="./js/UserController.js"></script>
   <script src="./js/RepoController.js"></script>
   <script src="./js/github.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <style>
+
+  </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <div class="box-1">
-      <ul>
-        <li><a class="active" href="#main">Home</a></li>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">GitHub Viewer</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active btn-custom"><a class="active" href="#main">Home</a></li>
       </ul>
     </div>
-    <!-- <div id="div"></div> -->
-    <div class="title box-2">
-        <h1> Github viewer </h1>
-      <div ng-view></div>
-    </div>
+  </nav>
 
+  <div class="container">
+    <h1> Github viewer </h1>
+    <div class="row">
+    <div class="col-md-12" ng-view></div>
   </div>
+  </div>
+
+  <div class="container">
+    <div class="row wrap">
+      <div class="col-xs-6 col-md-6 col-sm-4 wrap">Column 1</div>
+      <div class="col-xs-6 col-md-3 col-sm-4 wrap">Column 2</div>
+      <div class="col-xs-6 col-md-3 col-sm-4 wrap">Column 3</div>
+      <div class="col-xs-6 col-md-6 col-sm-4 wrap">Column 4</div>
+      <div class="col-xs-6 col-md-3 col-sm-4 wrap">Column 5</div>
+      <div class="col-xs-6 col-md-3 col-sm-4 wrap">Column 6</div>
+      <div class="col-xs-6 col-md-6 col-sm-4 wrap">Column 7</div>
+      <div class="col-xs-6 col-md-3 col-sm-4 wrap">Column 8</div>
+      <div class="col-xs-6 col-md-3 col-sm-4 wrap">Column 9</div>
+      <div class="col-xs-6 col-md-6 col-sm-4 wrap">Column 10</div>
+      <div class="col-xs-6 col-md-3 col-sm-4 wrap">Column 11</div>
+      <div class="col-xs-6 col-md-3 col-sm-4 wrap">Column 12</div>
+    </div>
+  </div>
+
 </body>
 
 </html>

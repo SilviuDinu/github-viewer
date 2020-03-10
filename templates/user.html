@@ -25,7 +25,7 @@
                 <input class="search" ng-show="sortOrder=='keyword'" type="search" placeholder="Search for..."
                     ng-model="searchWord" />
             </div>
-            <table>
+            <table class="custom"> 
                 <thead>
                     <tr>
                         <th>Name</th>
@@ -36,7 +36,7 @@
                 </thead>
                 <tbody>
                     <tr ng-repeat="repo in repos | filter:searchWord:name | orderBy:sortOrder">
-                        <td><div>{{repo.name}}</div><button class="btn" ng-click="search(username,repo.name)">View repo details</button></td>
+                        <td><div>{{repo.name}}</div><button class="btn-custom" ng-click="search(username,repo.name)">View repo details</button></td>
                         <td>{{repo.language}}</td>
                         <td>{{repo.stargazers_count}}</td>
                         <td><a href="{{repo.html_url}}" target="_blank">Repository URL</a></td>
